@@ -1,8 +1,9 @@
-## Journal indexing datasets
+## Indexing datasets and journal lists
 
 The processed journal indexing datasets have the following fields:
 
 `service`: Then name of the database or journal list (WoS, Scopus, etc).
+`edition`: Either describes the download data of the information (e.g., for wos, scopus) or the edition of the journal list (e.g., the 2022 ADBC list)
 `internal_identifier`: If an internal identifier for the journal (other than the journal name) is provided, it appears here.
 `journal_title`: Title of the journal as it appears in the database or journal list.
 `p_issn`: print ISSN.
@@ -21,9 +22,19 @@ Original data downloaded from Scopus (https://www.elsevier.com/products/scopus/c
 
 ### DOAJ (doaj)
 
-Original data in `data/260513_doaj/`. 
+Original data in `data/260513_doaj/`. Processed data for just DOAJ in `260513_doaj.csv` or `260513_doaj.parquet`.
 Current indexing data downloaded from DOAJ (from https://doaj.org/, under Data > Journal CSV) on 13 May 2026.
 Past indexing data downloaded from https://docs.google.com/spreadsheets/d/183mRBRqs2jOyP0qZWXN8dUd02D4vL0Mov_kgYF8HORM/edit and https://docs.google.com/spreadsheets/d/1Kv3MbgFSgtSDnEGkA2JacrSjunRu0umHeZCtcMeqO5E/edit on 13 May 2026.
-Only journals listed as deindexed by DOAJ for the reason "Journal not adhering to best practice" are included in the processed data. For the deindexed journals, only one ISSN is provided--it is listed under `p_issn`.
+Only journals listed as deindexed by DOAJ for the reason "Journal not adhering to best practice" are included in the processed data. For the deindexed journals, only one ISSN is provided--it is listed under `p_issn` (this does not imply if this ISSN represented the print or electronic ISSN).
 
-### Chinese Academy of Sciences Journal Early Warning List (2025)
+### Chinese Academy of Sciences Journal Early Warning List (cas_ewl)
+
+Original data in `data/260513_cas_ewl`. Processed data for just CAS EWL in `260513_cas_ewl.csv` or `260513_cas_ewl.parquet`.
+Downloaded from https://ewl.fenqubiao.com/#/en/introduction by importing into Excel.
+Five editions of the list are included in the processed data. Each list includes either zero or one ISSNs per journal--these are listed in the column `p_issn` if available (this does not imply if this ISSN represented the print or electronic ISSN).
+
+### Australian Business Deans Council Journal Quality List (adbc)
+
+Original data in `data/260513_abdc`. Processed data for just ABDC in `260513_abdc.csv` or `260513_abdc.parquet`.
+Indexing levels are described here https://abdc.edu.au/wp-content/uploads/2025/12/ToRs-2025-JQL-Review-1225.pdf.
+Six editions of the list are included in the processed data.
