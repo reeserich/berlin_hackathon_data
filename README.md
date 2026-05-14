@@ -30,7 +30,11 @@ Downloaded from Dataset S2 of https://doi.org/10.1073/pnas.2420092122. Dataset S
 
 ### Pandora's Box confirmed paper mill products, Abalkina et al., arXiv 2026 (pandora)
 
-A corpus of strongly-implicated paper mill products, primarily in conference proceedings, from Abalkian et al., ""
+A corpus of strongly-implicated paper mill products, primarily in conference proceedings, from Abalkian et al., "Opening Pandora's box: Paper mills in conference proceedings", arXiv 2026.
+Original data in `data/260513_pandora`. Processed data just for this dataset in `260513_pandora.csv`.
+Downloaded from Zenodo (https://doi.org/10.5281/zenodo.19727148) on 13 May 2026.
+`notes` column migrates the `Match status` column.
+
 
 ## Indexing datasets and journal lists
 
