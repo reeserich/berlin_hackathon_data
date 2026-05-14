@@ -1,6 +1,6 @@
 # Article datasets and lists
 
-The processed article-level datasets have the following fields:
+A combined dataset ccontaining all of the article-level datasets described below is available as `260514_combined_article_level_datasets.csv`. The processed article-level datasets have the following fields:
 
 `source`: describes the dataset (e.g., "pps_tortured")
 `doi`: provides the DOI of the article, converted to lowercase.
@@ -35,7 +35,7 @@ Original data in `data/260513_pandora`. Processed data just for this dataset in 
 Downloaded from Zenodo (https://doi.org/10.5281/zenodo.19727148) on 13 May 2026.
 `notes` column migrates the `Match status` column.
 
-### Citation Magnets, Smut Clyde/David Bimler 2025 (magnets/vehicles)
+### Citation Magnets, Smut Clyde/Bimler 2025 (magnets/vehicles)
 
 A corpus of articles that are frequently referenced out of context ("citation magnets") and articles that provide many out-of-context citations ("citation delivery vehicles"). See https://forbetterscience.com/2025/07/08/the-citation-payola/
 Original data in `data/260514_citation_magnets/`. Processed data just for this dataset in `260514_magnets.csv` and `260514_vehicles.csv`.
@@ -44,7 +44,7 @@ Downloaded from https://docs.google.com/spreadsheets/d/1yZN4tzYhwZkOSo_h00vrB8Rw
 
 # Indexing datasets and journal lists
 
-A combined dataset containing all of the indexing datasets and journal lists described below is available as `260513_combined_journal_level_datasets`. The processed journal-level indexing datasets have the following fields:
+A combined dataset containing all of the indexing datasets and journal lists described below is available as `260513_combined_journal_level_datasets.csv`. The processed journal-level indexing datasets have the following fields:
 
 `service`: Then name of the database or journal list (WoS, Scopus, etc).
 `edition`: Either describes the download data of the information (e.g., for wos, scopus) or the edition of the journal list (e.g., the 2022 ADBC list)
