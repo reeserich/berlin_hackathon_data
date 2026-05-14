@@ -1,11 +1,11 @@
-## Article datasets and lists
+# Article datasets and lists
 
 The processed article-level datasets have the following fields:
 
 `source`: describes the dataset (e.g., "pps_tortured")
 `doi`: provides the DOI of the article, converted to lowercase.
 `notes`: provides additional context if provided by the original dataset.
-`dim_id`: If provided by the source dataset, provides the Dimensions identifier of the article (pubid, specific to PPS datasets).
+`dim_id`: If provided by the source dataset, provides the Dimensions identifier of the article (pubid, specific to PPS datasets and magnets datasets).
 
 ### Retraction Watch Database (rwdb)
 
@@ -35,8 +35,14 @@ Original data in `data/260513_pandora`. Processed data just for this dataset in 
 Downloaded from Zenodo (https://doi.org/10.5281/zenodo.19727148) on 13 May 2026.
 `notes` column migrates the `Match status` column.
 
+### Citation Magnets, Smut Clyde/David Bimler 2025 (magnets/vehicles)
 
-## Indexing datasets and journal lists
+A corpus of articles that are frequently referenced out of context ("citation magnets") and articles that provide many out-of-context citations ("citation delivery vehicles"). See https://forbetterscience.com/2025/07/08/the-citation-payola/
+Original data in `data/260514_citation_magnets/`. Processed data just for this dataset in `260514_magnets.csv` and `260514_vehicles.csv`.
+Downloaded from https://docs.google.com/spreadsheets/d/1yZN4tzYhwZkOSo_h00vrB8Rwm9DTQGrSyiAa5wYXkWY/edit?gid=0#gid=0 and https://docs.google.com/spreadsheets/d/1o-9OIyzZ9mMqA7bprcbI5nemtYBfxiXH1ndI3y5A43E/edit?gid=0#gid=0 on 14 May 2026.
+
+
+# Indexing datasets and journal lists
 
 A combined dataset containing all of the indexing datasets and journal lists described below is available as `260513_combined_journal_level_datasets`. The processed journal-level indexing datasets have the following fields:
 
